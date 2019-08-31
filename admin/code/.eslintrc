@@ -1,0 +1,30 @@
+{
+    "parser": "babel-eslint",
+    "extends": "vue",
+    "plugins": [
+        "vuefix",
+        "html"
+    ],
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", 4, {
+            "SwitchCase": 1 // Switch 的 Case 也要缩进，默认不缩进
+        }], // 打开缩进4空格
+        "linebreak-style": ["error", "unix"], // 换行风格
+        "quotes": [1, "single"], // 引号类型：使用单引号
+        "semi": ["error", "never"], // 禁止分号作为语句结尾
+        "eqeqeq": "off", // 关闭强制使用 '===' 和 '!==' 来做判断比较
+        "no-unused-vars": "off", // 关闭强制声明未使用变量
+        "space-before-function-paren": "off", // 关闭函数名后的空格
+        "prefer-const": "off", // 关闭首选const
+        "no-undef": "off", // 关闭不能使用未定义变量
+        "camelcase": "error", // 打开强制驼峰命名规则
+        "eol-last": "off" // 关闭文件末尾空行
+    }
+}

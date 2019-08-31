@@ -1,0 +1,369 @@
+.buildEditor {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .layout-container .layout-container-body {
+        padding: 0 20px 32px 20px;
+    }
+    .edui-default .edui-toolbar .edui-combox .edui-combox-body {
+        height: 22px !important;
+    }
+    .img-Modal-mask {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(55, 55, 55, 0.6);
+        height: 100%;
+        z-index: 1000;
+        .img-Modal-wrap {
+            position: fixed;
+            overflow: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+            .img-Modal {
+                width: 1125px;
+                margin: 0 auto;
+                position: relative;
+                outline: none;
+                top: 100px;
+                margin-bottom: 50px;
+                .img-modal-content {
+                    position: relative;
+                    background-color: #fff;
+                    border: 0;
+                    border-radius: 6px;
+                    background-clip: padding-box;
+                    .img-modal-body {
+                        //padding: 16px;
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+                    .img-modal-footer {
+                        //border-top: 1px solid #e3e8ee;
+                        padding: 12px 18px 12px 18px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .title {
+        box-shadow: 0px 1px 0px 0px #e6e6e6;
+        height: 50px;
+        line-height: 50px;
+        font-family: PingFang-SC-Medium;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #333333;
+    }
+    .form {
+        margin-top: 40px;
+        .picUpload {
+            background: #fff;
+            border: 1px dashed #dcdee2;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: border-color .2s ease;
+            height: 100px;
+            width: 170px;
+            line-height: 100px;
+        }
+        .tips {
+            margin-top: 3px;
+            width: 350px;
+            .tipsContent {
+                min-width: 40px;
+                height: 30px;
+                background-color: #f5f5f5;
+                border-radius: 4px;
+                border: solid 1px #d9d9d9;
+                line-height: 29px;
+                text-align: center;
+                font-family: "PingFang-SC-Regular";
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                margin-right: 10px;
+                padding: 0 12px;
+            }
+            .tipsAdd {
+                height: 25px;
+                font-family: PingFang-SC-Medium;
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #2672ff;
+                line-height: 25px;
+                cursor: pointer;
+            }
+        }
+        .keyWord {
+            width: 350px;
+            margin-top: 3px;
+            .ivu-tag {
+                height: 25px;
+                line-height: 23px;
+                margin-right: 10px;
+            }
+            .keyWordAdd {
+                height: 30px;
+                font-family: PingFang-SC-Medium;
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #2672ff;
+                cursor: pointer;
+                line-height: 30px;
+            }
+            .item {
+                min-width: 40px;
+                height: 25px;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                border: solid 1px #d9d9d9;
+                line-height: 25px;
+                text-align: center;
+                font-family: "PingFang-SC-Regular";
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                margin-right: 10px;
+                padding: 0 5px;
+            }
+        }
+        .headPic {
+            .uploadImg {
+                display: inline-block;
+                width: 170px;
+                height: 100px;
+                text-align: center;
+                line-height: 100px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                overflow: hidden;
+                background: #fff;
+                position: relative;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+                margin-right: 4px;
+                img {
+                    width: 170px;
+                    height: 100px;
+                    border: 1px solid #dddee1;
+                }
+                .removePic {
+                    position: relative;
+                    left: -30px;
+                    top: -76px;
+                    cursor: pointer;
+                }
+                .imgView {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, .2);
+                }
+            }
+            .uploadImg:hover .imgView {
+                display: block;
+            }
+            .cover {
+                font-family: PingFang-SC-Medium;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 0px;
+                letter-spacing: 0px;
+                color: #999999;
+                margin-left: 15px;
+            }
+            .cut {
+                height: 18px;
+                width: 30px;
+                font-family: PingFang-SC-Medium;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #2d8cf0;
+                position: absolute;
+                left: 195px;
+                bottom: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.artcleDetaile {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .ivu-form-item-content {
+        font-size: inherit !important;
+    }
+    .layout-container .layout-container-body {
+        padding: 0 20px 32px 20px;
+    }
+    .title {
+        box-shadow: 0px 1px 0px 0px #e6e6e6;
+        height: 50px;
+        line-height: 50px;
+        font-family: PingFang-SC-Medium;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #333333;
+    }
+    .form {
+        margin-top: 40px;
+        .picUpload {
+            background: #fff;
+            border: 1px dashed #dcdee2;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: border-color .2s ease;
+            height: 100px;
+            width: 170px;
+            line-height: 100px;
+        }
+        .tips {
+            margin-top: 3px;
+            width: 350px;
+            .tipsContent {
+                min-width: 40px;
+                height: 25px;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                border: solid 1px #d9d9d9;
+                line-height: 25px;
+                text-align: center;
+                font-family: "PingFang-SC-Regular";
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                margin-right: 10px;
+                padding: 0 5px;
+            }
+            .tipsAdd {
+                height: 25px;
+                font-family: PingFang-SC-Medium;
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #2672ff;
+                line-height: 25px;
+                cursor: pointer;
+            }
+        }
+        .keyWord {
+            width: 350px;
+            margin-top: 3px;
+            .ivu-tag {
+                height: 25px;
+                line-height: 23px;
+                margin-right: 10px;
+            }
+            .keyWordAdd {
+                height: 30px;
+                font-family: PingFang-SC-Medium;
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #2672ff;
+                cursor: pointer;
+                line-height: 30px;
+            }
+            .item {
+                min-width: 40px;
+                height: 25px;
+                background-color: #f5f5f5;
+                border-radius: 8px;
+                border: solid 1px #d9d9d9;
+                line-height: 25px;
+                text-align: center;
+                font-family: "PingFang-SC-Regular";
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                margin-right: 10px;
+                padding: 0 5px;
+            }
+        }
+        .headPic {
+            .uploadImg {
+                display: inline-block;
+                width: 170px;
+                height: 103px;
+                text-align: center;
+                line-height: 100px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                overflow: hidden;
+                background: #fff;
+                position: relative;
+                /// box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+                margin-right: 4px;
+                img {
+                    width: 170px;
+                    height: 100px;
+                    border: 1px solid #dddee1;
+                }
+                // .noImg {
+                //     background: url("~cms/assets/img/noImg.png") no-repeat;
+                //     width: 170px;
+                //     height: 100px;
+                // }
+                .removePic {
+                    position: relative;
+                    left: -30px;
+                    top: -76px;
+                    cursor: pointer;
+                }
+                .imgView {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, .2);
+                }
+            }
+            .uploadImg:hover .imgView {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+
+@import '~assets/css/public.scss';
+.dashboard{
+    width:100%;
+    height:100%;
+
+    .dashboard-tab-wrap{
+        background:$background-color;
+        .ivu-tabs-bar{
+            margin-bottom:0px;
+        }
+    }
+    .dashboard-tab-container{
+        margin:10px 0px;
+
+        .card-head-icon{
+            height: 18px;
+            margin-right: 4px;
+        }
+        .user-opear-card{
+            >.title{
+                width:110px;
+                .title-label{
+                    font-size:16px;
+                    color:#999;
+                    cursor: pointer;
+                }
+                .title-label-select{
+                    font-size:22px;
+                    font-weight:bold;
+                    color:$theme-color;
+                }
+            }
+            .user-opear-card-wrap{
+                text-align:center;
+                .num{
+                    font-size:30px;
+                    position:relative;
+                }
+                .num:after{
+                    content: "";
+                    position: absolute;
+                    height: 20px;
+                    border-right: 1px solid #ddd;
+                    right: 0px;
+                    top: 20px;
+                }
+                .num:last-child:after{
+                    border-right:0px;
+                }
+                .card-add-num{
+                    color:rgb(255, 213, 114);
+                }
+                .card-num-active{
+                    color:rgb(100, 213, 114)
+                }
+                .card-num-total{
+                    font-size:30px;
+                    color:rgb(242, 94, 67);
+                }
+                .card-text{
+                    color:#C8C8C8;
+                }
+            }
+        }
+        .count-wrap{
+            .ivu-card-extra{
+                top:9px;
+            }
+        }
+        .dashboard-list-wrap{
+            .dashboard-list-title-right{
+                font-size:12px;
+                color:#999;
+            }
+            .ivu-card-extra{
+                top : 15px;
+                cursor: pointer;
+                width:160px;
+                .more{
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    font-size: 17px;
+                }
+            }
+            .app-list-status-select{
+                color:$theme-color;
+                .sprit{
+                    color:#999;
+                }
+            }
+            .ivu-card-body{
+                padding:0px;
+            }
+            .app-list-wrap{
+                border:0px;
+            }
+        }
+    }
+
+}

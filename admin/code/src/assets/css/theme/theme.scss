@@ -1,0 +1,51 @@
+$dark : #002140;
+$menu-bg : #001529;
+$menu-black : #000c17;
+$layout-bg : #f0f2f5;
+$theme-color : #1890ff;
+$border-color : #e8e8e8;
+
+.ivu-layout{
+    background : $layout-bg;
+}
+.ivu-layout-footer{
+    background : $layout-bg;
+}
+.ivu-layout-sider{
+    background : $menu-bg ;
+}
+.ivu-menu-dark{
+    padding : 16px 0px;
+    background : $menu-bg ;
+}
+
+.logo-wrap{
+    background : $dark;
+}
+
+.ivu-layout-sider{
+    -webkit-box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+}
+
+// .ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened{
+//     background: $menu-black;
+// }
+// .ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title{
+//     background: $menu-black;
+// }
+// .ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title{
+//     background: $menu-bg ;
+// }
+
+// .ivu-layout{
+//     background : $layout-bg;
+// }
+
+// .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item:hover, .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title:hover{
+//     background : none;
+// }
+
+// .ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title{
+//     padding : 12px 24px !important;
+// }

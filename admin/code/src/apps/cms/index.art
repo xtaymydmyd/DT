@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <% include('../../assets/art/meta.art') %>
+    <% include('../../assets/art/dll.art') %>
+    <title></title>
+    <link href=static/js/cms/swiper/swiper.min.css rel=stylesheet type=text/css /> 
+    <script src=static/js/cms/jquery-2.0.0.min.js></script>
+    <script src=static/js/cms/jquery-ui.js></script>
+    <script src=static/js/template/es5-sham.min.js></script>
+    <script src=static/js/template/es5-shim.min.js></script>
+    <script src=static/js/template/json3.min.js></script>
+    <script src=static/js/template/template-web.js></script>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+
+</html>
